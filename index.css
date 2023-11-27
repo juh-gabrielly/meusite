@@ -1,27 +1,8 @@
-.base{
-    text-align: center;
-}
-
-img{
-    margin: 3px;
-    border-radius: 20%;
-}
-
-
-.batom{
-    text-align: center;
-}
-
-img{
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.sombra{
-    text-align: center;
-}
-
-img{
+.base img,
+.batom img,
+.sombra img {
+    width: 30px; /* Defina o tamanho desejado */
+    height: auto;
     margin: 10px;
     border-radius: 50%;
 }
