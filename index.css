@@ -1,7 +1,7 @@
 .base img,
 .batom img,
 .sombra img {
-    width: 30px; /* Defina o tamanho desejado */
+    width: 150px; /* Defina o tamanho desejado */
     height: auto;
     margin: 10px;
     border-radius: 50%;
