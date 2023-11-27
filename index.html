@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore nosso catálogo de maquiagem com os melhores preços e produtos de alta qualidade. Encontre bases, batons e sombras para realçar sua beleza.">
     <title>Maquiagem - Catálogo de Preços</title>
     <style>
         /* Estilos CSS para melhorar a aparência */
@@ -13,11 +16,19 @@
             text-align: center;
             color: #FF1493;
         }
+
+        h2.destaque {
+            color: #4CAF50; /* Cor verde para destacar */
+        }
         
         .catalogo {
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 10px;
+        }
+
+        .catalogo:nth-child(even) {
+            background-color: #f2f2f2; /* Cor de fundo alternada para produtos */
         }
         
         .nome-produto {
@@ -32,6 +43,15 @@
             margin-top: 10px;
             font-style: italic;
         }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +59,7 @@
     
     <div class="catalogo">
         <h2>Produto 1</h2>
+        <img src="base_liquida.jpg" alt="Base Líquida">
         <p class="nome-produto">Base Líquida</p>
         <p class="preco">R$ 50,00</p>
         <p class="loja-info">Disponível em diversas lojas de cosméticos.</p>
@@ -46,6 +67,7 @@
     
     <div class="catalogo">
         <h2>Produto 2</h2>
+        <img src="batom.jpg" alt="Batom">
         <p class="nome-produto">Batom</p>
         <p class="preco">R$ 20,00</p>
         <p class="loja-info">Encontre nas lojas de departamento ou com revendedores autorizados.</p>
@@ -53,12 +75,13 @@
     
     <div class="catalogo">
         <h2>Produto 3</h2>
+        <img src="sombra_po.jpg" alt="Sombra em Pó">
         <p class="nome-produto">Sombra em Pó</p>
         <p class="preco">R$ 15,00</p>
-        <p class="loja-info">Você pode comprar online em sites especializados.</p>
+        <p class="loja-info">Você pode comprar online em <a href="https://www.exemplo.com" target="_blank">sites especializados</a>.</p>
     </div>
     
-    <h2>Onde Comprar</h2>
+    <h2 class="destaque">Onde Comprar</h2>
     <ul>
         <li>Loja de cosméticos XYZ</li>
         <li>Loja de departamentos ABC</li>
@@ -66,7 +89,7 @@
         <li>Compras online em sites especializados</li>
     </ul>
     
-    <h2>Revendedores</h2>
+    <h2 class="destaque">Revendedores</h2>
     <ul>
         <li>Revendedora 1 - Telefone: (XX) XXXX-XXXX</li>
         <li>Revendedora 2 - Telefone: (XX) XXXX-XXXX</li>
